@@ -1,49 +1,47 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Utils
 {
     public class TextureController : MonoBehaviour
     {
-        public Texture2D normalTexture;
-        public Texture2D pressedTexture;
+        private bool hit;
 
         protected string scene;
+        protected Image button;
 
-        private bool pressed;
+        public Sprite pressedSprite;
 
-        void Update()
+        void Awake()
         {
-            if (Input.touchCount > 0)
-            {
-                // Is the touch on the current texture
-                bool hit = guiTexture.HitTest(Input.GetTouch(0).position);
-
-                if (Input.GetTouch(0).phase == TouchPhase.Began && hit)
-                {
-                    pressed = true;
-                    guiTexture.texture = pressedTexture;
-                }
-                else
-                    if (Input.GetTouch(0).phase == TouchPhase.Ended)
-                    {
-                        if (pressed)
-                        {
-                            guiTexture.texture = normalTexture;
-                            pressed = false;
-
-                            if (hit)
-                                LoadScene(scene);
-                        }
-                    }
-            }
+            button = gameObject.GetComponent<Image>();
         }
 
-        private void LoadScene(string scene)
+        public void OnPointerDown()
+        {
+            hit = true;
+            this.button.overrideSprite = pressedSprite;
+        }
+
+        public void OnPointerUp()
+        {
+            this.button.overrideSprite = null;
+            if (hit)
+                LoadScene(scene);
+        }
+
+        public void OnPointerExit()
+        {
+            hit = false;
+        }
+
+        protected void LoadScene(string scene)
         {
             if (scene == "exit")
                 Application.Quit();
             else
-                Application.LoadLevel(scene);
+                SceneManager.LoadScene(scene);
         }
     }
 }
