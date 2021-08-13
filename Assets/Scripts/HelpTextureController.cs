@@ -10,10 +10,10 @@ public class HelpTextureController : TextureController
         float width = Screen.width / 16;
         float height = width;
 
-        guiTexture.pixelInset = new Rect(
-            Screen.width - (width * 1.5f),
-            (height * 1.5f) - height,
-            width,
-            height);
+        //guiTexture.pixelInset = new Rect(
+        //    Screen.width - (width * 1.5f),
+        //    (height * 1.5f) - height,
+        //    width,
+        //    height);
     }
 }

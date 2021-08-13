@@ -10,10 +10,10 @@ public class NewGameTextureController : TextureController
         float width = Screen.width / 2;
         float height = width / 4;
 
-        guiTexture.pixelInset = new Rect(
-            width - (width / 2),
-            (Screen.height / 1.8f) - height,
-            width,
-            height);
+        //guiTexture.pixelInset = new Rect(
+        //    width - (width / 2),
+        //    (Screen.height / 1.8f) - height,
+        //    width,
+        //    height);
     }
 }

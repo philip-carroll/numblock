@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class GameOverMenu : MonoBehaviour
             "New Game",
             buttonStyle))
         {
-            Application.LoadLevel("numblock_scene");
+            SceneManager.LoadScene("numblock_scene");
         }
 
         if (GUI.Button(
@@ -32,7 +33,7 @@ public class GameOverMenu : MonoBehaviour
             "Main Menu",
             buttonStyle))
         {
-            Application.LoadLevel("numblock_start");
+            SceneManager.LoadScene("numblock_start");
         }
     }
 }

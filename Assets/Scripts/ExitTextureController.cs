@@ -10,10 +10,10 @@ public class ExitTextureController : TextureController
         float width = Screen.width / 2;
         float height = width / 4;
 
-        guiTexture.pixelInset = new Rect(
-            (Screen.width / 2) - (width / 2),
-            (Screen.height / 3) - height,
-            width,
-            height);
+        //guiTexture.pixelInset = new Rect(
+        //    (Screen.width / 2) - (width / 2),
+        //    (Screen.height / 3) - height,
+        //    width,
+        //    height);
     }
 }
