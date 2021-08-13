@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{B4A8B737-E90F-1EF8-0992-D985E8B683C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numblock", "Numblock.csproj", "{D989591B-9578-8FF2-0EAB-EF2FA2178218}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B4A8B737-E90F-1EF8-0992-D985E8B683C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4A8B737-E90F-1EF8-0992-D985E8B683C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4A8B737-E90F-1EF8-0992-D985E8B683C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4A8B737-E90F-1EF8-0992-D985E8B683C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D989591B-9578-8FF2-0EAB-EF2FA2178218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D989591B-9578-8FF2-0EAB-EF2FA2178218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D989591B-9578-8FF2-0EAB-EF2FA2178218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D989591B-9578-8FF2-0EAB-EF2FA2178218}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -20,14 +20,13 @@ Global
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
-		$0.TextStylePolicy = $1
+		$0.TextStylePolicy = $3
 		$1.inheritsSet = null
 		$1.scope = text/x-csharp
 		$0.CSharpFormattingPolicy = $2
 		$2.inheritsSet = Mono
 		$2.inheritsScope = text/x-csharp
 		$2.scope = text/x-csharp
-		$0.TextStylePolicy = $3
 		$3.FileWidth = 120
 		$3.TabWidth = 4
 		$3.EolMarker = Unix
