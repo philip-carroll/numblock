@@ -1,16 +1,12 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Utils;
+using UnityEngine;
 
-public class LeftTextureController : MonoBehaviour
+public class LeftTextureController : NavigationController
 {
-    public Texture2D normalTexture;
-    public Texture2D pressedTexture;
-
-    private bool pressed;
-    private int frameCount;
-    private int threshold = 5;
-
     void Start()
     {
+        this.direction = "Left";
+
         float width = Screen.width / 6;
         float height = width;
 
@@ -19,30 +15,5 @@ public class LeftTextureController : MonoBehaviour
         //    (Screen.height / 2) - (height / 2),
         //    width,
         //    height);
-    }
-
-    void Update()
-    {
-        if (pressed && frameCount >= threshold)
-        {
-            //guiTexture.texture = normalTexture;
-            pressed = false;
-            frameCount = 0;
-        }
-
-        if (!GameManager.instance.gameOver && Input.touchCount > 0)
-        {
-            bool hit = false; //guiTexture.HitTest(Input.GetTouch(0).position);
-
-            if (Input.GetTouch(0).phase == TouchPhase.Began && hit)
-            {
-                //guiTexture.texture = pressedTexture;
-                pressed = true;
-                frameCount = 0;
-                GameManager.instance.direction = "Left";
-            }
-        }
-
-        frameCount++;
     }
 }
