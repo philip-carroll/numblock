@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>4.9.1.0</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>4.11.3.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2019.4.23f1</UnityVersion>
@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\RestartTextureController.cs" />
     <Compile Include="Assets\Scripts\RightTextureController.cs" />
     <Compile Include="Assets\Scripts\TotalController.cs" />
+    <Compile Include="Assets\Scripts\Utils\NavigationController.cs" />
     <Compile Include="Assets\Scripts\Utils\TextureController.cs" />
     <None Include="Assets\Scripts\Numblock.asmdef" />
     <Reference Include="UnityEngine">
