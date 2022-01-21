@@ -1,22 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 namespace Assets.Scripts.Utils
 {
-    public class TextureController : MonoBehaviour
+    public class TextureController : SpriteController
     {
         private bool hit;
 
         protected string scene;
-        protected Image button;
 
         public Sprite pressedSprite;
-
-        void Awake()
-        {
-            button = gameObject.GetComponent<Image>();
-        }
 
         public void OnPointerDown()
         {

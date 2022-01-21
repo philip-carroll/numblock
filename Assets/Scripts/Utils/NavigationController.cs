@@ -1,23 +1,16 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 namespace Assets.Scripts.Utils
 {
-    public class NavigationController : MonoBehaviour
+    public class NavigationController : SpriteController
     {
         public Sprite pressedSprite;
 
         protected string direction;
 
-        private Image button;
         private bool pressed;
         private int frameCount;
         private int threshold = 5;
-
-        void Awake()
-        {
-            button = gameObject.GetComponent<Image>();
-        }
 
         void Update()
         {
