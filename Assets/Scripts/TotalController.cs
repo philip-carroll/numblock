@@ -2,6 +2,8 @@
 
 public class TotalController : MonoBehaviour
 {
+    public Canvas canvas;
+
     public GameObject dialogPrefab;
     public GameObject gameOverPrefab;
     public GameObject restartPrefab;
@@ -48,14 +50,16 @@ public class TotalController : MonoBehaviour
         {
             if (dropNumber > currentNumber)
             {
+                Debug.Log("Game Over");
+
                 GameManager.instance.gameOver = true;
                 Time.timeScale = 0;
                 GameManager.instance.SetHighscore();
 
-                Instantiate(dialogPrefab);
-                Instantiate(gameOverPrefab);
-                Instantiate(restartPrefab);
-                Instantiate(mainMenuPrefab);
+                Instantiate(dialogPrefab, canvas.transform);
+                Instantiate(gameOverPrefab, canvas.transform);
+                Instantiate(restartPrefab, canvas.transform);
+                Instantiate(mainMenuPrefab, canvas.transform);
             }
             else
                 currentNumber -= dropNumber;
