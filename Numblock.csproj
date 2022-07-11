@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\GameOverTextureController.cs" />
     <Compile Include="Assets\Scripts\Utils\TextureController.cs" />
     <Compile Include="Assets\Scripts\RightTextureController.cs" />
+    <Compile Include="Assets\Scripts\Utils\SpriteController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Numblock.asmdef" />
