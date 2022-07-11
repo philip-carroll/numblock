@@ -10,12 +10,7 @@ public class NewGameTextureController : TextureController
         float width = Screen.width / 2;
         float height = width / 4;
 
-        button.rectTransform.localPosition = new Vector2(0, 0);
+        button.rectTransform.localPosition = new Vector2(0, -(height / 4));
         button.rectTransform.sizeDelta = new Vector2(width, height);
-        //guiTexture.pixelInset = new Rect(
-        //    width - (width / 2),
-        //    (Screen.height / 1.8f) - height,
-        //    width,
-        //    height);
     }
 }

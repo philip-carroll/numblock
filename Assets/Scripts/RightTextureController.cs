@@ -10,10 +10,7 @@ public class RightTextureController : NavigationController
         float width = Screen.width / 6;
         float height = width;
 
-        //guiTexture.pixelInset = new Rect(
-        //    Screen.width / 20,
-        //    (Screen.height / 2) - (height / 2),
-        //    width,
-        //    height);
+        button.rectTransform.localPosition = new Vector2(width * 2, 0);
+        button.rectTransform.sizeDelta = new Vector2(width, height);
     }
 }
