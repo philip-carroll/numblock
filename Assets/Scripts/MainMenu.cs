@@ -12,5 +12,7 @@ public class MainMenu : MonoBehaviour
         Screen.autorotateToPortraitUpsideDown = false;
 
         Screen.orientation = ScreenOrientation.AutoRotation;
+
+        Application.targetFrameRate = 60;
     }
 }
