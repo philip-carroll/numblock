@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.9.34622.214
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numblock", "Numblock.csproj", "{D989591B-9578-8FF2-0EAB-EF2FA2178218}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Games.Editor", "Google.Play.Games.Editor.csproj", "{64A2894F-AD24-4BF8-4E1D-571905CB70A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{B4A8B737-E90F-1EF8-0992-D985E8B683C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Games", "Google.Play.Games.csproj", "{44251199-E0F0-D6AA-B672-CD3C1A5AC4AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D989591B-9578-8FF2-0EAB-EF2FA2178218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D989591B-9578-8FF2-0EAB-EF2FA2178218}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D989591B-9578-8FF2-0EAB-EF2FA2178218}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D989591B-9578-8FF2-0EAB-EF2FA2178218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A2894F-AD24-4BF8-4E1D-571905CB70A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A2894F-AD24-4BF8-4E1D-571905CB70A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A2894F-AD24-4BF8-4E1D-571905CB70A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A2894F-AD24-4BF8-4E1D-571905CB70A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A8B737-E90F-1EF8-0992-D985E8B683C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A8B737-E90F-1EF8-0992-D985E8B683C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A8B737-E90F-1EF8-0992-D985E8B683C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A8B737-E90F-1EF8-0992-D985E8B683C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44251199-E0F0-D6AA-B672-CD3C1A5AC4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44251199-E0F0-D6AA-B672-CD3C1A5AC4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44251199-E0F0-D6AA-B672-CD3C1A5AC4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44251199-E0F0-D6AA-B672-CD3C1A5AC4AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

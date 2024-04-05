@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using GooglePlayGames;
+using System;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,7 +29,7 @@ public class GameManager : MonoBehaviour
         {
             if (_instance == null)
             {
-                _instance = Object.FindObjectOfType(typeof(GameManager)) as GameManager;
+                _instance = UnityEngine.Object.FindObjectOfType(typeof(GameManager)) as GameManager;
                 _instance.SetUp();
             }
 
@@ -79,7 +81,33 @@ public class GameManager : MonoBehaviour
         if (PlayerPrefs.HasKey(key))
         {
             if (PlayerPrefs.GetInt(key) <= score)
+            {
                 PlayerPrefs.SetInt(key, score);
+
+                if (PlayGamesPlatform.Instance.IsAuthenticated())
+                {
+                    try
+                    {
+                        // Post score to leaderboard
+                        PlayGamesPlatform.Instance.ReportScore(score, GPGSIds.leaderboard_high_scores, (bool success) =>
+                        {
+                            if (success)
+                            {
+                                Debug.Log("Numblock GPGS score posted");
+                                //PlayGamesPlatform.Instance.ShowLeaderboardUI();
+                            }
+                            else
+                                Debug.Log("Numblock GPGS score posting failure");
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.Log("Numblock GPGS score posting exception:" + ex.ToString());
+                    }
+                }
+                else
+                    Debug.Log("Numblock GPGS not authenticated");
+            }
         }
         else
             PlayerPrefs.SetInt(key, score);
